@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind utilities;
+
+/* Dat 1 ky tu dac biet o phia truoc de tranh nham lan voi tailwind */
+.my_top-menu-item {
+	@apply cursor-pointer py-1 hover:text-gray-800 relative after:absolute after:bottom-0 after:bg-light-coffee after:h-0.5 hover:after:w-full  after:w-0 after:transition-all after:ease-in-out after:duration-300   after:left-1/2 after:-translate-x-1/2;
+}
+.my_icon {
+	@apply w-5 h-5 inline-block;
+}
+.my_badge-circle {
+	@apply text-xs text-center rounded-full px-1.5;
+}

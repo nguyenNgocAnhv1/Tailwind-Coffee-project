@@ -1,0 +1,3 @@
+- Cach cau hinh mau sac 
+- Viet appline thuoc tinh cho 1 class cu the
+- :hover, :affter
