@@ -2,14 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 /* Dat 1 ky tu dac biet o phia truoc de tranh nham lan voi tailwind */
 .my_top-menu-item {
-	@apply cursor-pointer py-1 hover:text-gray-800 relative after:absolute after:bottom-0 after:bg-light-coffee after:h-0.5 hover:after:w-full  after:w-0 after:transition-all after:ease-in-out after:duration-300   after:left-1/2 after:-translate-x-1/2;
+	@apply cursor-pointer py-1 hover:text-gray-800 relative after:lg:absolute after:bottom-0 after:bg-coffee-200 after:h-0.5 hover:after:w-full  after:w-0 after:transition-all after:ease-in-out after:duration-300   after:left-1/2 after:-translate-x-1/2;
+}
+.my_top-menu-item-active {
+	@apply text-gray-800;
 }
 .my_icon {
 	@apply w-5 h-5 inline-block;
 }
 .my_badge-circle {
-	@apply text-xs text-center rounded-full px-1.5;
+	@apply text-xs leading-4 text-center rounded-full px-1.5;
+}
+.my_menu-expanded {
+	@apply absolute top-10 z-50 w-full bg-white text-center animate-slideDown;
+}
+.slideOut {
+	animation: slideOut 1s ease-in;
+}
+.my_subheadline {
+	@apply flex justify-center items-center mb-24;
+}
+.my_subheadline-deco-line {
+	@apply w-8 h-px bg-gray-400;
+}
+.my_subheadline-label {
+	@apply uppercase mx-4 tracking-widest text-gray-500 text-xs text-center;
+}
+.my_button {
+	@apply uppercase tracking-wider text-center py-4 px-6 text-sm font-semibold cursor-pointer hover:bg-opacity-90 transition-all;
+}
+
+@keyframes slideOut {
+	0% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+	100% {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
 }
