@@ -35,6 +35,9 @@ module.exports = {
 			backgroundImage: {
 				"slider-bg": "url('./img/slider-bg.jpeg')",
 			},
+			screens:{
+				'xs':"480px"
+			}
 		},
 	},
 	plugins: [],
